@@ -1,0 +1,9 @@
+
+.photo {
+    width: 10px;
+    height: 10px;
+}
+.header {
+    grid-area: h;
+    background: purple;
+}
