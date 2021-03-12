@@ -1,10 +1,10 @@
 import React from "react";
 
-const Profile = ()  => {
+const Messages = ()  => {
     return (
         <div>
-            Profile
+            Messages
         </div>
     )
 }
-export default Profile
+export default Messages
