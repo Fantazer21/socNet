@@ -3,14 +3,23 @@ import Header from "../Header/Header";
 import Profile from "./Profile";
 import s from './nav.module.css'
 import Messages from "./Messages";
+import {NavLink} from "react-router-dom";
 
 export const Navbar = () => {
     return (
         <nav className={s.nav}>
-            <div className={s.item}><a href='/Profile'>Profile</a></div>
-            <div className={s.item}><a href='/Messages'>Messages</a></div>
-            <div className={s.item}><a href='/News'>news</a></div>
-            <div className={s.item}><a href='/Music'>music</a></div>
+            <NavLink to="/Profile">
+                Profile
+            </NavLink>
+            <NavLink to="/Messages">
+                Messages
+            </NavLink>
+            <a href="/News">
+                News
+            </a>
+            <a href="/Music">
+                Music
+            </a>
         </nav>
     )
 }

@@ -2,4 +2,12 @@
 .nav {
     grid-area: n;
     background: yellow;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    text-decoration: none;
+}
+.active {
+    color: blue;
 }

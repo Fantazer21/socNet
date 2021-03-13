@@ -19,21 +19,18 @@ const Content = () => {
         {age: 40}
     ]
     return (
-        <BrowserRouter>
             <div className={styles.content}>
                 {/*<img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg"*/}
                 {/*     className={styles.photo_content} alt=""/>*/}
                 {/*<Post message={` ${User1[0].name} ${User1[1].age}`}/>*/}
                 {/*<Post message={` ${User2[0].name} ${User2[1].age}`}/>*/}
                 {/*<Post message='How are you'/>*/}
-                <div>
-                    <Route path='/profile' component={Profile}/>
-                    <Route path='/messages' component={Dialogs}/>
-                    <Route path='/News' component={News}/>
-                    <Route path='/Music' component={Music}/>
-                </div>
+                <Route path='/profile' component={Profile}/>
+                <Route path='/messages' component={Dialogs}/>
+                <Route path='/News' component={News}/>
+                <Route path='/Music' component={Music}/>
             </div>
-        </BrowserRouter>
+
     )
 }
 export default Content
