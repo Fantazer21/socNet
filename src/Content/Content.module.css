@@ -4,6 +4,7 @@
     background: aqua;
     display: flex;
     flex-direction: column;
+    padding-top: 20px;
 }
 .photo_content {
     width: 600px;
