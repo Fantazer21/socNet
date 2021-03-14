@@ -3,6 +3,7 @@ import Post from './Post'
 import Dialogs from "../Dialogs/Dialogs";
 import News from "../News/news";
 import Music from "../Music/Music";
+import Messages from "../nav/messages";
 
 
 import styles from './Content.module.css'
@@ -25,8 +26,8 @@ const Content = () => {
                 {/*<Post message={` ${User1[0].name} ${User1[1].age}`}/>*/}
                 {/*<Post message={` ${User2[0].name} ${User2[1].age}`}/>*/}
                 {/*<Post message='How are you'/>*/}
-                <Route path='/profile' component={Profile}/>
-                <Route path='/messages' component={Dialogs}/>
+                {/*<Route path='/profile' component={Profile}/>*/}
+                <Route path='/messages' component={Messages}/>
                 <Route path='/News' component={News}/>
                 <Route path='/Music' component={Music}/>
             </div>
