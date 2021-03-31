@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Profile from "./Profile";
 import s from './nav.module.css'
-import Messages from "./Messages";
+import Messages from "./messages";
 import {NavLink} from "react-router-dom";
 
 export const Navbar = () => {
