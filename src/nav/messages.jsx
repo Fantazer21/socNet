@@ -24,18 +24,30 @@ const MessageBlock1 = (props) => {
 
     return (
 
-        <div className={s.Profile_full_message}>
-            <div className={s.block_photo}>
-                <Profile_photo
-                    path={stateData.Joker.pathImage}
-                />
-            </div>
-            <div>
-                <Person
-                    title="Message 1"
-                    state={` Hello i am ${stateData.Joker.name} `}
-                />
-            </div>
+
+
+
+        <div className={s.Profile_full_message_main}>
+            {
+                stateData.map( el => { return (
+                    <div className={s.Profile_full_message}>
+                        <div className={s.block_photo}>
+                            <Profile_photo
+                                path={el.pathImage}
+                            />
+                        </div>
+                        <Person
+                            title="Message 1"
+                            state={` Hello i am ${el.name} `}
+                        />
+                    </div>
+
+
+
+                )
+                })
+            }
+
         </div>
     )
 }
